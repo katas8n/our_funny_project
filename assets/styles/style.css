@@ -1,13 +1,57 @@
 :root {
-    --bg-color : indigo ;
+    --bg-color : darkviolet ;
     --text-color : white ;
+    --border-color : darkcyan ;
     --sm-fs : .8rem;
     --md-fs : 1.2rem;
     --xl-fs : 1.8rem;
 }
-
+/* 1rem - 16px */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+a {
+    color : inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    color: var(--text-color);
+    font-family: sans-serif;
+}
+
+.header {
+    background-color: var(--bg-color);
+}
+
+.header__logo {
+    width: 2rem ;
+}
+
+.box {
+    width: calc(100%/3) ;
+    background-color: violet;
+    font-size: 4rem;
+    border: 2px solid purple;
+}
+
+.box:first-child {
+    background-color: darkmagenta;
+    float: left;
+}
+
+.box:nth-child(2) {
+    float: left;
+}
+
+.box:last-child {
+    background-color: darkorchid;
+    float: left;
 }

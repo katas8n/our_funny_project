@@ -5,6 +5,8 @@
     --sm-fs : .8rem;
     --md-fs : 1.2rem;
     --xl-fs : 1.8rem;
+    --sans : sans-serif;
+    --serif : serif;
 }
 /* 1rem - 16px */
 * {
@@ -20,38 +22,37 @@ a {
 
 li {
     list-style-type: none;
+    display: inline-block;
 }
 
 .container {
     color: var(--text-color);
-    font-family: sans-serif;
+    font-family:var(--sans) ;
+
 }
 
 .header {
     background-color: var(--bg-color);
+    display: flex;
+    padding: 1.2rem;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .header__logo {
     width: 2rem ;
 }
 
-.box {
-    width: calc(100%/3) ;
-    background-color: violet;
-    font-size: 4rem;
-    border: 2px solid purple;
+.nav {
+    width: 30% ;
 }
 
-.box:first-child {
-    background-color: darkmagenta;
-    float: left;
+.nav__items {
+    display: flex;
+    justify-content: space-between;
 }
 
-.box:nth-child(2) {
-    float: left;
-}
-
-.box:last-child {
-    background-color: darkorchid;
-    float: left;
+.content-wrapper {
+    height: 100vh;
+    background: linear-gradient(rgb(175, 70, 227) , darkviolet);
 }

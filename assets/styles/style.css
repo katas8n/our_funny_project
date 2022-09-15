@@ -1,0 +1,14 @@
+:root {
+    --bg-color : indigo ;
+    --text-color : white ;
+    --sm-fs : .8rem;
+    --md-fs : 1.2rem;
+    --xl-fs : 1.8rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
